@@ -48,8 +48,8 @@ For each thread, we use select() to test the timeout of clientsocket in a while 
    I use file pointer to handle file I/O. There is a bug for writing file after timeout. It hangs there and doesn't write anything after timeout. The bug was fixed by adding fflush(fp) before the fwrite. This often happens when fp is reused.
 
 
-##List of Additional Libraries
- <errno.h> <fcntl.h> <signal.h> <pthread.h>
+## List of Additional Libraries
+<errno.h> <fcntl.h> <signal.h> <pthread.h>
 
 
 ## References
